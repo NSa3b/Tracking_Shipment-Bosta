@@ -1,14 +1,26 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import Navbar from "./Navbar";
+
+import { ConfigProvider } from 'antd';
+import ShipmentTracking from "./ShipmentTracking";
 
 function App() {
-  const [count, setCount] = useState(0);
+  // const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-red-900">Hello world!</h1>
+      <ConfigProvider
+        theme={{
+          token: {colorPrimary: "#e20613",},
+        }}
+      >
+        <Navbar></Navbar>
+        <section className="lg:px-20 md:px-10 px-5 py-10">
+        <ShipmentTracking></ShipmentTracking>
+        </section>        
+      </ConfigProvider>
+      
+      {/* <h1 className="text-3xl font-bold underline text-red-900">Hello world!</h1>
       <div className="flex justify-center">
         <a href="https://vitejs.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -28,7 +40,7 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
-      </p>
+      </p> */}
     </>
   );
 }
