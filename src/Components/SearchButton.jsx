@@ -3,7 +3,7 @@ import { Dropdown, Space, theme, Input, Typography } from "antd";
 import { useTranslation } from "react-i18next";
 
 import { useDispatch } from "react-redux";
-import { fetchData } from "./Redux/shipmentSlice";
+import { fetchData } from "../Redux/shipmentSlice";
 
 const { Title } = Typography;
 const { useToken } = theme;
@@ -20,7 +20,7 @@ export default function SearchButton() {
   const { t } = useTranslation();
 
   const dispatch = useDispatch();
-  const onSearch = (value, _e, info) => {
+  const onSearch = (value) => {
     dispatch(fetchData(value));
   };
 

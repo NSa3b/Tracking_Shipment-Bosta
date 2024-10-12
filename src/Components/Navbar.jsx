@@ -1,5 +1,5 @@
-import LogoEn from "./assets/imgs/bosta_logo_english.svg";
-import LogoAr from "./assets/imgs/bosta_logo_arabic.svg";
+import LogoEn from "../assets/imgs/bosta_logo_english.svg";
+import LogoAr from "../assets/imgs/bosta_logo_arabic.svg";
 import SearchButton from "./SearchButton";
 import LangButton from "./LangButton";
 import { useState } from "react";

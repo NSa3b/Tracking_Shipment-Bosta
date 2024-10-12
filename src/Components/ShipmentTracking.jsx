@@ -1,5 +1,5 @@
 import {Button } from "antd";
-import vector from "./assets/imgs/vector.jpg";
+import vector from "../assets/imgs/vector.jpg";
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 import { format } from 'date-fns';

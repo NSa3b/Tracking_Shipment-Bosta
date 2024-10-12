@@ -18,9 +18,9 @@ export default function DetailsTable({TransitEvents, reasonColor}) {
 
   return (
     <>
-      <table className="min-w-full table-auto rounded-lg border-1 border border-gray-100 overflow-hidden">
-        <thead>
-          <tr className="bg-[#fbfbfb] border-1 border border-gray-100">
+      <table className="w-full table-auto rounded-lg border-1 border border-gray-100 overflow-hidden">
+        <thead className="border-1 border border-gray-100">
+          <tr className="bg-[#fbfbfb] ">
             <th className="p-4 text-start">{t('Branch')}</th>
             <th className="p-4 text-start">{t('Date')}</th>
             <th className="p-4text-start">{t('Time')}</th>
