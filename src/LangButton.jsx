@@ -1,22 +1,30 @@
 
 import { Dropdown, Space, message } from "antd";
-
-const onClick = ({ key }) => {
-    message.info(`Click on item ${key}`);
-  };
+import { useTranslation } from 'react-i18next';
 
 const items = [
   {
-    key: "1",
-    label:'English' 
+    key: "en",
+    label:'English',
+ 
+     
   },
   {
-    key: "2",
+    key: "ar",
     label: "العربية",
+  
   },
 ];
 
 export default function LangButton() {
+  const { i18n } = useTranslation();
+
+   // Function to handle language change
+   const onClick = ({ key }) => {
+    i18n.changeLanguage(key); // Update i18n language
+    // Change the document direction based on language
+    document.documentElement.dir = key === 'ar' ? 'rtl' : 'ltr';
+  };
   return (
     <>
       <Dropdown menu={{items,onClick,}} placement="bottomLeft" >

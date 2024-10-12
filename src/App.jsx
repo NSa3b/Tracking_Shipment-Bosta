@@ -1,12 +1,13 @@
 import { useState } from "react";
-import Navbar from "./Navbar";
-
+import { useTranslation } from 'react-i18next';
 import { ConfigProvider } from 'antd';
+
+import Navbar from "./Navbar";
 import ShipmentTracking from "./ShipmentTracking";
 
 function App() {
   // const [count, setCount] = useState(0);
-
+  const { i18n, t } = useTranslation();
   return (
     <>
       <ConfigProvider
@@ -15,9 +16,9 @@ function App() {
         }}
       >
         <Navbar></Navbar>
-        <section className="lg:px-20 md:px-10 px-5 py-10">
+        <main className="lg:px-20 md:px-10 px-5 py-10">
         <ShipmentTracking></ShipmentTracking>
-        </section>        
+        </main>        
       </ConfigProvider>
       
       {/* <h1 className="text-3xl font-bold underline text-red-900">Hello world!</h1>

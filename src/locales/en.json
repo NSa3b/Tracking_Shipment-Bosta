@@ -1,0 +1,40 @@
+{
+   "Home":"Home",
+   "Prices":"Prices",
+   "Call Sales":"Call Sales",
+   "Track Shipment":"Track Shipment",
+   "Login":"Login",
+   "Track no.":"Track no.",
+
+   "Shipment no.":"Shipment no.",
+   "Latest Update":"Latest Update",
+   "Provider Name":"Provider Name",
+   "Promised Delivery Date":"Promised Delivery Date",
+
+   "Shipment Cancelled":"Shipment Cancelled",
+   "Shipment Delivered":"Shipment Delivered",
+   "Shipment Not Delivered":"Shipment Not Delivered",
+
+
+    "Ticket Created":"Ticket Created",
+    "Package Received":"Package Received",
+    "Out For Delivery":"Out For Delivery",
+    "Delivered":"Delivered",
+
+    "Shipping Details":"Shipping Details",
+    "Shipping Address":"Shipping Address",
+    "Branch":"Branch",
+    "Date":"Date",
+    "Time":"Time",
+    "Details":"Details",
+    "Do you have a problem with your shipment":"Do you have a problem with your shipment?!",
+    "Report a Problem":"Report a Problem",
+
+
+    "Uncovered Zone":"Uncovered Zone",
+    "Cancellation - The customer refuses to give the shipment to the star":"Cancellation - The customer refuses to give the shipment to the star",
+    "client is not present at Address":"client is not present at Address",
+    "the provider cancelled the shipment":"the provider cancelled the shipment"
+
+
+}

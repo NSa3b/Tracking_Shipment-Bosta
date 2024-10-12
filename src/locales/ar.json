@@ -1,0 +1,37 @@
+{
+    "Home":"الرئيسية",
+    "Prices":"الاسعار",
+    "Call Sales":"كلم المبيعات",
+    "Track Shipment":"تتبع شحنتك",
+    "Login":"تسجيل دخول",
+    "Track no.":"رقم التتبع",
+
+    "Shipment no.":"رقم الشحنة",
+    "Latest Update":"اخر تحديث",
+    "Provider Name":"اسم التاجر",
+    "Promised Delivery Date":"موعد التسليم خلال",
+ 
+    "Shipment Cancelled":"تم إلغاء الشحنة",
+    "Shipment Delivered":"تم تسليم الشحنة",
+    "Shipment Not Delivered":"لم يتم تسليم الشحنة",
+    
+    "Ticket Created":"تم إنشاء الشحنة",
+    "Package Received":"تم إستلام الشحنة من التاجر",
+    "Out For Delivery":"الشحنة خرجت للتسليم",
+    "Delivered":"تم التسليم",
+
+    "Shipping Details":"تفاصيل الشحنة",
+    "Shipping Address":"عنوان الشحنة",
+    "Branch":"الفرع",
+    "Date":"التاريخ",
+    "Time":"الوقت",
+    "Details":"تفاصيل",
+    "Do you have a problem with your shipment":"هل يوجد مشكلة في شحنتك ؟!",
+    "Report a Problem":"إبلاغ عن مشكلة",
+
+
+    "Uncovered Zone":"المنطقة خارج التغطية",
+    "Cancellation - The customer refuses to give the shipment to the star":"الإلغاء - يرفض العميل تسليم الشحنة للمندوب",
+    "client is not present at Address":"العميل غير موجود في العنوان",
+    "the provider cancelled the shipment":"قام التاجر بإلغاء الشحنة"
+}
