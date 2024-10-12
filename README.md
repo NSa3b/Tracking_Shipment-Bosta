@@ -21,11 +21,12 @@ To get started with this project, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/NSa3b/Tracking_Shipment-Bosta.git
-   
+2. Navigate to the project directory:
+   ```bash
+   cd Tracking_Shipment-Bosta
 3. Install the dependencies:
    ```bash
-   npm install
-   
+   npm install 
 4. Start the development server:
    ```bash
   npm run dev
