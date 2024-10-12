@@ -5,7 +5,9 @@ import { initReactI18next } from 'react-i18next';
 import EN from './locales/en.json';
 import AR from './locales/ar.json';
 
-// Define the resources (translations)
+
+const savedLanguage = localStorage.getItem('language') || 'en';
+
 const resources = {
   en: { translation: EN },
   ar: { translation: AR }
@@ -13,11 +15,14 @@ const resources = {
 
 i18n.use(initReactI18next).init({
   resources,
-  lng: 'en', // default language
+  lng: savedLanguage, 
   fallbackLng: 'en',
   interpolation: {
-    escapeValue: false, // react already safe from XSS
+    escapeValue: false,
   },
+  react: {
+    useSuspense: false
+  }
 });
 
 export default i18n;

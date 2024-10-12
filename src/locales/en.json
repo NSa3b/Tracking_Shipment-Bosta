@@ -11,10 +11,17 @@
    "Provider Name":"Provider Name",
    "Promised Delivery Date":"Promised Delivery Date",
 
-   "Shipment Cancelled":"Shipment Cancelled",
-   "Shipment Delivered":"Shipment Delivered",
-   "Shipment Not Delivered":"Shipment Not Delivered",
-
+   "CANCELLED":"Shipment Cancelled",
+   "DELIVERED":"Shipment Delivered",
+   "TICKET_CREATED":"Ticket Created",
+   "PACKAGE_RECEIVED":"Package Received",
+   "DELIVERY_FAILED":"Delivery Failed",
+   "IN_TRANSIT":"In Transit",
+   "NOT_YET_SHIPPED":"Not yet Shipped",
+   "DELIVERED_TO_SENDER":"Delivered to Sender",
+   "OUT_FOR_DELIVERY":"Out for Delivery",
+   "AVAILABLE_FOR_PICKUP":"Available for Pickup",
+   "WAITING_FOR_CUSTOMER_ACTION":"Waiting for Customer Action",
 
     "Ticket Created":"Ticket Created",
     "Package Received":"Package Received",
@@ -34,7 +41,13 @@
     "Uncovered Zone":"Uncovered Zone",
     "Cancellation - The customer refuses to give the shipment to the star":"Cancellation - The customer refuses to give the shipment to the star",
     "client is not present at Address":"client is not present at Address",
-    "the provider cancelled the shipment":"the provider cancelled the shipment"
+    "the provider cancelled the shipment":"the provider cancelled the shipment",
+    
+
+    "Enter track number to search for your shipment":"Enter track number to search for your shipment",
+    "Nasr City":"Nasr City",
+    "The tracking number you entered is incorrect":"The tracking number you entered is incorrect",
+    "Loading":"Loading"
 
 
 }

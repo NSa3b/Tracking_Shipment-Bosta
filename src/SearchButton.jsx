@@ -1,12 +1,14 @@
 import { DownOutlined } from "@ant-design/icons";
 import { Dropdown, Space, theme, Input, Typography } from "antd";
+import { useTranslation } from "react-i18next";
+
+import { useDispatch } from "react-redux";
+import { fetchData } from "./Redux/shipmentSlice";
 
 const { Title } = Typography;
 const { useToken } = theme;
 const { Search } = Input;
-const onSearch = (value, _e, info) => {
-  console.log(info?.source, value);
-};
+
 
 export default function SearchButton() {
   const { token } = useToken();
@@ -15,6 +17,13 @@ export default function SearchButton() {
     borderRadius: token.borderRadiusLG,
     boxShadow: token.boxShadowSecondary,
   };
+  const { t } = useTranslation();
+
+  const dispatch = useDispatch();
+  const onSearch = (value, _e, info) => {
+    dispatch(fetchData(value));
+  };
+
   return (
     <>
       <Dropdown
@@ -22,15 +31,19 @@ export default function SearchButton() {
         dropdownRender={() => (
           <div style={contentStyle}>
             <Space style={{ padding: 30 }} direction="vertical">
-              <Title level={5}>Track your shipment</Title>
-              <Search placeholder="Track no." onSearch={onSearch} enterButton />
+              <Title level={5}>{t("Track Shipment")}</Title>
+              <Search
+                placeholder={t("Track no.")}
+                onSearch={onSearch}
+                enterButton
+              />
             </Space>
           </div>
         )}
       >
         <a onClick={(e) => e.preventDefault()}>
           <Space>
-            Track Shipment
+            {t("Track Shipment")}
             <DownOutlined />
           </Space>
         </a>
